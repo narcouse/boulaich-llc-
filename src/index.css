@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-navy: #020617;
+  --color-gold: #D4AF37;
+  --color-gold-hover: #B8860B;
+  --color-slate-400: #94a3b8;
+  --color-paper: #020617; /* Replaced light paper with theme navy */
+  --color-glass-bg: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-navy text-slate-100 font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold; /* Theme uses bold sans for most headings, italic serif for accents */
+  }
+
+  .italic-serif {
+    @apply font-serif italic;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+}
+
+.markdown-body {
+  @apply space-y-6 text-slate-400 leading-relaxed font-light;
+}
+
+.markdown-body h1 { @apply text-4xl font-bold font-sans text-white mt-12 mb-8; }
+.markdown-body h2 { @apply text-2xl font-bold font-sans text-white mt-10 mb-6; }
+.markdown-body p { @apply mb-4; }
+
+
