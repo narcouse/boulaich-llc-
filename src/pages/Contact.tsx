@@ -37,7 +37,7 @@ export default function Contact() {
               {[
                 { icon: Mail, label: 'Email Us', value: 'hello@boulaich.com' },
                 { icon: Phone, label: 'Call Us', value: '+212 (0) 512 345 678' },
-                { icon: MapPin, label: 'Our Office', value: '123 Digital Way, Suite 500, Casablanca' }
+                { icon: MapPin, label: 'Our Office', value: '1001 S MAIN ST, STE 600, KALISPELL, MT 59901-1498' }
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-6 group">
                   <div className="w-14 h-14 rounded-2xl glass flex items-center justify-center flex-shrink-0 group-hover:bg-gold transition-all duration-300 border-gold/10">
@@ -138,13 +138,13 @@ export default function Contact() {
                   <Globe size={32} />
                 </div>
                 <h3 className="text-white font-bold text-2xl mb-2">Our Global Hub</h3>
-                <p className="text-slate-400 font-light uppercase tracking-widest text-[10px]">Casablanca, Morocco</p>
+                <p className="text-slate-400 font-light uppercase tracking-widest text-[10px]">Kalispell, MT 59901</p>
               </div>
            </div>
            <img 
             src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=1920" 
             className="w-full h-full object-cover rounded-[32px] grayscale opacity-40 transition-all duration-700 hover:grayscale-0 hover:opacity-100" 
-            alt="Casablanca Map"
+            alt="Kalispell Map"
            />
         </div>
       </section>
